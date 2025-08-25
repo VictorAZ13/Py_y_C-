@@ -1,0 +1,24 @@
+# --Python
+_pycache_/
+*.pyc
+*.pyo
+*.log
+
+#Archivos temporales
+*.tmp
+*.swp
+*.bak
+
+# --C++--
+*.exe
+*.o
+*.out
+
+#Archivos de compilacion
+build/
+.vscode
+*.json
+
+#General
+.DS_Store
+Thumbs.db
