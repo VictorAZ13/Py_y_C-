@@ -1,0 +1,5 @@
+
+Nombre:Victor Flores 
+Edad:25 
+Estatura en metros:2.1 
+Estudia: No
