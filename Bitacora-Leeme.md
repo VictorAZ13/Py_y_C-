@@ -1,8 +1,8 @@
-Mini Proyecto: Python + C++
+# Mini Proyecto: Python + C++
 
 Este mini-proyecto integra Python y C++ en un flujo sencillo de recolección y procesamiento de datos.
 
-📂 Estructura del proyecto
+#📂 Estructura del proyecto
 .
 ├── Python/
 │   ├── inputs.py
@@ -15,7 +15,7 @@ Este mini-proyecto integra Python y C++ en un flujo sencillo de recolección y p
 ├── datos.txt
 └── README.md
 
-⚙️ Funcionamiento
+# ⚙️ Funcionamiento
 
 El usuario ejecuta main.py.
 
@@ -48,7 +48,7 @@ Nombre: Victor
 Edad: 25
 Estatura: 1.75
 
-✅ Items cumplidos
+# ✅ Items cumplidos
 
 Item 1: Persistencia de datos con archivos de texto
 
@@ -60,7 +60,7 @@ Item 4: Limpieza del entorno y estructura del repositorio
 
 Item 5: Documentación mínima (README y bitácora)
 
-📖 Bitácora
+# 📖 Bitácora
 
 Día 1-2: Configuración inicial, módulos de Python, lectura/escritura básica de archivos.
 
