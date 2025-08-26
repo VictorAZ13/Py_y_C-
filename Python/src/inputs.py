@@ -9,7 +9,7 @@ def pedir_edad():
     while True: #Esto hara que el while pare cuando edad adquiera un valor valido
         try:
             edad = int(input("Ingresa tu edad"))
-            if edad > 200:
+            if edad > 200 or edad < 0:
                 raise ValueError()
             break
         except ValueError:
@@ -21,7 +21,7 @@ def pedir_estatura():
     while True:
         try:
             estatura = float(input("Ingresa tu estatura en metros"))
-            if estatura == 0 or estatura > 2.10:
+            if estatura == 0 or estatura > 2.10 or estatura < 0:
                 raise ValueError()
             break
         except ValueError:

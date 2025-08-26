@@ -28,11 +28,7 @@ while True:
             print("Ingrese los datos completos")
             pausa()
         else:
-            print(f"Hola {nomb}\nVeo que tienes {edad} años\nTu estatura es {estatura} metros \n")
-            if est:
-                print("Por lo que veo estas estudiando")
-            else:
-                print("Nunca es tarde para estudiar algo")
+            print(f"Datos rellenados \n Nombre: {nomb}\n Edad: {edad} años\nEstatura: {estatura} metros \n Estudias: {'Si' if est else 'No'}")
             pausa()
         limpiar()        
     elif opcion == 6:
@@ -43,19 +39,14 @@ while True:
         est = None
     elif opcion == 7:
         if nomb is None or edad is None or estatura is None or est is None:
-            print("Ingrese los datos completos")
+            print("Ingrese los datos completos para sobreescribir")
             pausa()
         else:
-            with open("datos.txt","a",encoding="utf-8") as archivo:
+            with open("datos.txt","w",encoding="utf-8") as archivo:
                 archivo.write(f"Nombre:{nomb} \n")
                 archivo.write(f"Edad:{edad} \n")
-                archivo.write(f"Estatura en metros:{estatura} \n")
+                archivo.write(f"Estatura:{estatura} \n")
                 archivo.write(f"Estudia: {'Si'if est else 'No'}\n")
-            opcion = None
-            nomb = None
-            edad = None
-            estatura = None
-            est = None
             datos_guardados = True
             archivo.close()
             print("Datos guardados")
@@ -68,8 +59,13 @@ while True:
         else:
             with open("datos.txt","r",encoding="utf-8") as archivo:
                 print(archivo.read())
+            opcion = None
+            nomb = None
+            edad = None
+            estatura = None
+            est = None
             pausa()
-            archivo.close()
+        
     elif opcion == 9:
         if datos_guardados:
             ruta_calculadora = os.path.join("C++","Calculadora","build","programa.exe")

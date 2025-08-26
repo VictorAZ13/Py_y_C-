@@ -9,9 +9,9 @@ def menu():
         print("4. Ingresa si estudias")
         print("5. Ver tus datos")
         print("6. Reiniciar datos")
-        print("7. Guardar datos")
+        print("7. Sobreescribir datos")
         print("8. Cargar datos")
-        print("9. Ingresar a la calculadora")
+        print("9. Ingresar a la calculadora (Solo con los datos completos)")
         print("10. Salir\n")
         try:
             opcion = int(input("Inserte una opción: "))
